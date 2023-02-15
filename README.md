@@ -10,4 +10,9 @@ Part of the demo uses code from [small_printf](https://www.menie.org/georges/emb
 | PD4       | INB      |
 | PD6       | ENA      |
 
-<i>Note: this demo assumes that the ATMEGA328 is running at 16MHz, that the baud rate is 9600</i>
+<i>Note: this demo assumes that the ATMEGA328 is running at 16MHz, that the baud rate is 9600</i> <br>
+### Building :
+Run `make` in the same directory <br>
+The provided makefile does no optimization and assumes the AVR binaries are on PATH. <br>
+If not, change the according lines: `CC=<path to avr-gcc>`, `SECTION=<path to avr-size>`, and add the following directives: `-I <path to device include files>`
+
