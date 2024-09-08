@@ -172,13 +172,13 @@ int main(void)
 			case INCREASE:
 			if (pwm_val <= TOP_VALUE - PWM_STEP) pwm_val += PWM_STEP;
 			rcv = DEFAULT;
-			avr_printf("%s\r\n", "Increasing PWM");
+			avr_printf("%s\r\n", "Increasing duty cycle");
 			break;
 			
 			case DECREASE:
 			if (pwm_val >= PWM_STEP) pwm_val -= PWM_STEP;
 			rcv = DEFAULT;
-			avr_printf("%s\r\n", "Decreasing PWM");
+			avr_printf("%s\r\n", "Decreasing duty ycle");
 			break;
 			
 			case STOP:
