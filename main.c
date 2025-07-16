@@ -178,7 +178,7 @@ int main(void)
 			case DECREASE:
 			if (pwm_val >= PWM_STEP) pwm_val -= PWM_STEP;
 			rcv = DEFAULT;
-			avr_printf("%s\r\n", "Decreasing duty ycle");
+			avr_printf("%s\r\n", "Decreasing duty cycle");
 			break;
 			
 			case STOP:
